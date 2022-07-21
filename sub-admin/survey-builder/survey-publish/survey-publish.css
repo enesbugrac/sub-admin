@@ -132,6 +132,8 @@ input:checked + .slider:before {
   height: 100%;
   justify-content: center;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 .active-item {
   background-color: #5ca3e0;

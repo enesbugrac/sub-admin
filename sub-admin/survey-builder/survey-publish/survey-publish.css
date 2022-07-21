@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+}
+.survey-container {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+.survey-top-bar {
+  background-color: #0d1d29;
+  height: 80px;
+}
+.survey-top-bar-container {
+  padding-left: 2%;
+  padding-top: 0.5%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.switch {
+  margin-left: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 16px;
+}
+.toggle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  bottom: -3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #0fa958;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0fa958;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.logo-container {
+  color: white;
+  font: normal normal 300 15px "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-bar-title-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  font: normal normal 300 15px "Poppins";
+}
+.date {
+  color: #0089ff;
+
+  font: normal normal 300 13px "Poppins";
+}
+.survey-top-navbar {
+  background-color: #037ae0;
+  height: 30px;
+}
+.survey-top-navbar-container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  font: normal normal 300 13px "Poppins";
+  color: white;
+}
+.navbar-buttons-container {
+  width: 67%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar-buttons-container-item {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  cursor: pointer;
+}
+.active-item {
+  background-color: #5ca3e0;
+}
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.head-container {
+  width: 38%;
+  display: flex;
+  flex-direction: row;
+}
+.head-text-container {
+  display: flex;
+  margin-left: 3%;
+  flex-direction: column;
+  line-height: 0;
+}
+.head-img {
+  width: 40px;
+}
+.head-text-title {
+  line-height: 0;
+  font: normal normal 600 15px "Poppins";
+}
+.head-text-sub {
+  line-height: 0px;
+  white-space: nowrap;
+  font: normal normal 200 12px "Poppins";
+}
+.container-in {
+  height: 180px;
+  margin-top: 20px;
+  width: 38%;
+
+  box-shadow: 0px 0px 5px #0000001a;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-in-text {
+  width: 80%;
+  margin-bottom: 15px;
+
+  font: normal normal 500 15px "Poppins";
+}
+.link-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background-color: #bababa82;
+  border-radius: 5px;
+  padding: 1%;
+  color: #0d1d29;
+  font: normal normal 200 12px "Poppins";
+}
+.link-container-text-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.link-img {
+  width: 14px;
+}
+.link-text {
+  margin-left: 2%;
+}
+.link-buttons-container {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+.link-button {
+  border-radius: 20px;
+  border-color: transparent;
+  width: 20%;
+  font: normal normal normal 13px "Poppins";
+  color: white;
+  margin-left: 3%;
+}
+.color-1 {
+  background-color: #0fa958;
+}
+.color-2 {
+  background-color: #2c628e;
+}

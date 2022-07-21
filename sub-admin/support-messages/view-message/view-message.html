@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="view-message.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <div class="sidebar-image-container">
+        <div class="sidebar-image-container-1">
+          <div class="sidebar-button-container">
+            <div class="sidebar-button-container-div">
+              <img
+                src="../../images/inner-1.svg"
+                class="sidebar-button-container-inner"
+              />
+              <button class="sidebar-button" onclick="location.href='../../dashboard/dashboard.html'">Dashboard</button>
+            </div>
+            <div class="sidebar-button-container-div">
+              <img
+              src="../../images/Rectangle 2012.svg"
+              class="sidebar-button-container-rectangle"
+              />
+              <img
+                src="../../images/suppor-messages.svg"
+                class="sidebar-button-container-inner"
+              />
+              <button class="sidebar-button button-active" >Support Messages</button>
+            </div>
+            <div class="sidebar-button-container-div" >
+              <img
+              src="../../images/Rectangle 2012.svg"
+              id="survey-rectangle"
+              class="sidebar-button-container-rectangle-survey"
+              />
+              <img
+                src="../../images/survey.svg"
+                class="sidebar-button-container-inner"
+              />
+              <div class="survey-container">               
+                <button onclick="surveyClassAdd()" id="surveyButton" class="sidebar-button-survey">Survey
+                  <img id="survey-arrow" src="../../images/ionic-ios-arrow-down.svg" class="passive-survey-icon">
+                </button>
+                <div class="survey-sub-nav" id="subNavSurvey">
+                  <div class="sub-nav-item" id="subNavItem1">
+                    <img class="survey-image" src="../../images/survey.svg">
+                    <a class="survey-link" href="../../survey/my-surveys/my-surveys.html" >
+                      My Surveys</a>
+                  </div>
+                  <div class="sub-nav-item" id="subNavItem2">
+                    <img class="survey-image" src="../../images/survey.svg">
+                    <a class="survey-link" href="../../survey-builder/survey-publish/survey-publish.html">
+                      Create New Survey</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-logout-container">
+            <div class="sidebar-button-container-div">
+              <img
+                src="../../images/inner-3.svg"
+                class="sidebar-logout-button-container-inner"
+              />
+              <button class="sidebar-logout-button">Log Out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-navbar">
+          <img src="../../images/settings-whale.svg" style="width: 25px;margin-right: 25px;">
+          <p class="container-navbar-title"
+            >Welcome back,
+            <p class="container-navbar-name">&nbsp;&nbsp;John</p>
+          </p>
+          <img src="../../images/profile-pic (4).svg" class="container-navbar-img" />
+        </div>
+        <div class="container-content">
+            <div class="container-content-top">
+                <div class="container-content-top-text">
+                    <div class="go-back" onclick="location.href='../support-messages.html'"><img src="../../images/feather-arrow-left.svg" style="width: 20px;">Back</div>
+                    <div class="container-content-top-text-mid">Student Name:&nbsp;<p class="container-content-top-text-mid-text">Frank Moket</p></div>
+                    <div class="container-content-top-text-mid">School Name:&nbsp;<p class="container-content-top-text-mid-text">Lorem Ipsum</p></div>
+                    
+                </div>
+            </div>    
+            <div class="message-board-table">
+                <div class="message-board-table-left">
+                    <div class="message-board-table-head">Mar 10</div>
+                    <div class="message-board-table-head-message-container">
+                        <div class="message-board-table-head-message-info">
+                                <img src="../../images/profile-pic (4).svg" class="message-avatar">
+                                <div class="message-name-info"> <p class="message-name">John&nbsp;</p><p class="message-sent">sent you a message</p> </div>
+                                <p class="message-date">March 9, 11:24 Pm</p>
+                        </div>    
+                        <div class="message-board-table-head-message-text">
+                            <div class="message-board-table-head-message-text-div">
+                              Hello,
+                              <br>
+                              <br>
+                              <br>
+                              Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy</div>
+                        </div>
+                    </div>
+                    <div class="message-board-table-head-message-container">
+                        <div class="message-board-table-head-message-info">
+                                <img src="../../images/profile-pic (4).svg" class="message-avatar">
+                                <div class="message-name-info"> <p class="message-name">John&nbsp;</p><p class="message-sent">sent you a message</p> </div>
+                                <p class="message-date">March 9, 11:24 Pm</p>
+                        </div>    
+                        <div class="message-board-table-head-message-text">
+                            <div class="message-board-table-head-message-text-div">
+                            Hello,
+                            <br>
+                            
+                            Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stetdolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stetdolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+      </div>
+    </div>
+    <script>
+      function surveyClassAdd() {
+           var element = document.getElementById("surveyButton");
+           var rect = document.getElementById("survey-rectangle");
+           var arrow = document.getElementById("survey-arrow");
+           var surveySub = document.getElementById("subNavSurvey");
+           var surveySubItem1 = document.getElementById("subNavItem1");
+           var surveySubItem2 = document.getElementById("subNavItem2");
+           if(element.classList.contains("button-active-survey")){
+            element.classList.remove("button-active-survey");
+            rect.style.display="none"
+            arrow.classList.remove("active-survey-icon")
+            surveySub.classList.remove("survey-sub-nav-active")
+
+           }else{
+            arrow.classList.add("active-survey-icon")
+            element.classList.add("button-active-survey");
+            rect.style.display="block"
+            surveySub.classList.add("survey-sub-nav-active")
+           }
+      }
+    </script>
+  </body>
+</html>

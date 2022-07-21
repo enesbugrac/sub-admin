@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="signin-container">
+      <div class="signin-input-container">
+        <lottie-player
+          src="108277.json"
+          background="transparent"
+          speed="1"
+          style="width: 400px; height: 400px"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="signin-image-container-text">
+          Contact | Privacy | Terms Of Use | Cookie Policy
+        </div>
+      </div>
+      <div class="signin-image-container">
+        <div class="signin-image-container-form">
+          <div>
+            <p class="signin-input-container-title">Sign In To Your Account</p>
+          </div>
+          <div class="signin-inputs">
+            <div class="signin-input">
+              <span class="input-label">Email address</span>
+              <input class="signin-input-input" />
+            </div>
+            <div class="signin-input">
+              <span class="input-label">Password</span>
+              <input class="signin-input-input" />
+            </div>
+          </div>
+          <p
+            class="signin-forgetpassword"
+            onclick="location.href='./sub-admin/account-recovery/account-recovery.html'"
+          >
+            Forgot Password?
+          </p>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LeCka8gAAAAAGCwMXI1IklWWERHQXANOfbzwbGU"
+          ></div>
+          <button
+            class="signin-button"
+            onclick="location.href='./sub-admin/dashboard/dashboard.html'"
+          >
+            SIGN IN
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

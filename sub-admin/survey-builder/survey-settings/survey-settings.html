@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="survey-settings.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".js-example-basic-multiple").select2();
+      });
+      $(document).ready(function () {
+        $(".js-example-basic-single").select2();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="survey-container">
+      <div class="survey-top-bar">
+        <div class="survey-top-bar-container">
+          <div class="logo-container">
+            <img
+              style="width: 60px; margin-right: 10%"
+              src="../../images/logo.png"
+            />
+            <span>Vouchpad</span>
+          </div>
+          <div class="top-bar-title-date">
+            <span>New Survey</span>
+            <span class="date">All changes saved at 2:43 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="survey-top-navbar">
+        <div class="survey-top-navbar-container">
+          <div class="navbar-buttons-container">
+            <a class="navbar-buttons-container-item">BUILD</a>
+            <a class="navbar-buttons-container-item active-item">SETTINGS</a>
+            <a class="navbar-buttons-container-item">PUBLISH</a>
+          </div>
+          <div class="toggle-container">
+            <span>Preview Survey</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="head-container">
+          <img src="../../images/Settings_icn.svg" class="head-img" />
+          <div class="head-text-container">
+            <span class="head-text-title">SURVEY SETTINGS</span>
+            <span class="head-text-sub"
+              >Change form status and properties.</span
+            >
+          </div>
+        </div>
+        <div class="container-in">
+          <div class="container-item">
+            <span class="container-item-title">Title</span>
+            <span class="container-item-sub"
+              >Enter a short, descriptive name for this form.</span
+            >
+            <input class="container-item-input" placeholder="Survey Form" />
+          </div>
+          <div class="container-item">
+            <span class="container-item-title">Participant location.</span>
+            <select
+              class="js-example-basic-multiple container-item-select"
+              multiple="multiple"
+            >
+              <option value="TX" selected>Texas</option>
+              <option value="NY" selected>New York</option>
+              <option value="GE" selected>Georgia</option>
+              <option value="WY">Wyoming</option>
+              <option value="AL">Alabama</option>
+              <option value="WY">Hawaii</option>
+            </select>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title">Survey Status</span>
+            <span class="container-item-sub"
+              >You can disable your form now, on a specific date, or when it
+              reaches a certain number of submissions.</span
+            >
+            <select
+              class="js-example-basic-single container-item-select"
+              name="state"
+            >
+              >
+              <option value="TX" selected>Disable on date</option>
+              <option value="AL">Enabled</option>
+              <option value="WY">Disabled</option>
+            </select>
+            <div class="container-sub-item">
+              <span class="container-item-title">Survey Status</span>
+              <span class="container-item-sub">Disable survey on a date.</span>
+              <div class="container-sub-item-date">
+                <input
+                  class="container-item-input-date"
+                  placeholder="May 28, 2022"
+                />
+                <span class="container-date-text">at</span>
+                <input class="container-item-hour" placeholder="4:10" />
+                <input class="container-item-pm" placeholder="PM" />
+              </div>
+            </div>
+            <div
+              class="container-sub-item"
+              style="border-bottom: none !important"
+            >
+              <span class="container-item-title">Warning Message</span>
+              <span class="container-item-sub"
+                >Set a message for forms which are expired or limited</span
+              >
+              <input
+                class="container-item-input"
+                placeholder="This survey is currently unavailable!"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="save-button">SAVE</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

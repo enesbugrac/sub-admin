@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="student-message-board.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <div class="sidebar-image-container">
+        <div class="sidebar-image-container-1">
+          <div class="sidebar-button-container">
+            <div class="sidebar-button-container-div">
+              <img
+              src="../../../images/Rectangle 2012.svg"
+              class="sidebar-button-container-rectangle"
+              />
+              <img
+                src="../../../images/inner-1.svg"
+                class="sidebar-button-container-inner"
+              />
+              <button class="sidebar-button-active" onclick="location.href='../../dashboard.html'">Dashboard</button>
+            </div>
+            <div class="sidebar-button-container-div">
+              <img
+                src="../../../images/suppor-messages.svg"
+                class="sidebar-button-container-inner"
+              />
+              <button class="sidebar-button" onclick="location.href='../../../support-messages/support-messages.html'">Support Messages</button>
+            </div>
+            <div class="sidebar-button-container-div">
+              <img
+              src="../../../images/Rectangle 2012.svg"
+              id="survey-rectangle"
+              class="sidebar-button-container-rectangle-survey"
+              />
+              <img
+                src="../../../images/survey.svg"
+                class="sidebar-button-container-inner"
+              />
+              <div class="survey-container">               
+                <button onclick="surveyClassAdd()" id="surveyButton" class="sidebar-button-survey">Survey
+                  <img id="survey-arrow" src="../../../images/ionic-ios-arrow-down.svg" class="passive-survey-icon">
+                </button>
+                <div class="survey-sub-nav" id="subNavSurvey">
+                  <div class="sub-nav-item" id="subNavItem1">
+                    <img class="survey-image" src="../../../images/survey.svg">
+                    <a class="survey-link" href="../../../survey/my-surveys/my-surveys.html" >
+                      My Surveys</a>
+                  </div>
+                  <div class="sub-nav-item" id="subNavItem2">
+                    <img class="survey-image" src="../../../images/survey.svg">
+                    <a class="survey-link" href="../../../survey-builder/survey-publish/survey-publish.html">
+                      Create New Survey</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-logout-container">
+            <div class="sidebar-button-container-div">
+              <img
+                src="../../../images/inner-3.svg"
+                class="sidebar-logout-button-container-inner"
+              />
+              <button class="sidebar-logout-button">Log Out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-navbar">
+          <img src="../../../images/settings-whale.svg" style="width: 25px;margin-right: 25px;">
+          <p class="container-navbar-title"
+            >Welcome back,
+            <p class="container-navbar-name">&nbsp;&nbsp;John</p>
+          </p>
+          <img src="../../../images/profile-pic (4).svg" class="container-navbar-img" />
+        </div>
+        <div class="container-content">
+            <div class="container-content-top">
+                <div class="container-content-top-text">
+                    <div class="go-back" onclick="location.href='../../dashboard.html'"><img src="../../../images/feather-arrow-left.svg" style="width: 20px;">Back</div>
+                    <p class="container-content-top-text-top">Case ID 1001 </p>
+                    
+                    <div class="container-content-info-container">
+                        <div>
+                            <div class="container-content-top-text-mid">Student Name:&nbsp;<p class="container-content-top-text-mid-text">Frank Moket</p></div>
+                            <div class="container-content-top-text-mid">Country:&nbsp;<p class="container-content-top-text-mid-text">USA</p></div>
+                            <div class="container-content-top-text-mid">State: &nbsp;<p class="container-content-top-text-mid-text">Texas</p></div>
+                            <div class="container-content-top-text-mid">City:&nbsp;<p class="container-content-top-text-mid-text"> Dallas</p></div>
+                            
+                        </div>
+                        <div>
+                            <div class="container-content-top-text-mid">Partner Name:&nbsp;<p class="container-content-top-text-mid-text"> Ali</p></div>
+                            <div class="container-content-top-text-mid">Partner Institution:&nbsp;<p class="container-content-top-text-mid-text"> Grand Bank</p></div>
+                            <div class="container-content-top-text-mid">Country:&nbsp;<p class="container-content-top-text-mid-text">USA</p></div>
+                            <div class="container-content-top-text-mid">State: &nbsp;<p class="container-content-top-text-mid-text">Texas</p></div>
+                            <div class="container-content-top-text-mid">City:&nbsp;<p class="container-content-top-text-mid-text" style="margin-right: 30px;"> Dallas</p> <button class="assign-button" onclick="location.href='../loan-application/loan-application-unpartner.html'">Un-Assign Partner</button></div>
+                            
+                        </div>
+                        <div>
+                            <div class="container-content-top-text-mid">
+                                <span>Credit Score:&nbsp;</span>
+                                <div style="display: flex; flex-direction: row; align-items: center;font-size: 14px; margin-left: 5px; "class="container-content-top-text-mid-text"><p class="container-content-table-dot" ></p><span>330</span></div>
+                                <img src="../../../images/info-loan.svg" class="info" style="width: 15px; margin-left: 7px; vertical-align: middle;" >
+                                <div class="container-content-table-info-hover">
+                                  <div class="container-content-table-info-hover-item">
+                                    <p class="container-content-table-dot" ></p><p style="width: 80%;">Very Poor: 300-579</p> 
+                                  </div >
+                                  <div class="container-content-table-info-hover-item">
+                                    <p class="container-content-table-dot" style="background-color: #F98228;"></p><p style="width: 80%;">Fair: 580-669</p>  
+                                  </div>
+                                  <div class="container-content-table-info-hover-item">
+                                    <p class="container-content-table-dot" style="background-color: #FEA724;"></p><p style="width: 80%;">Good: 670-739</p>  
+                                  </div>
+                                  <div class="container-content-table-info-hover-item">
+                                    <p class="container-content-table-dot" style="background-color: #C1D129;"></p><p style="width: 80%;">Very Good: 740-799</p>  
+                                  </div>
+                                  <div class="container-content-table-info-hover-item">
+                                    <p class="container-content-table-dot" style="background-color: #66BB6A;"></p><p style="width: 80%;">Exceptional: 800-850</p>  
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="container-content-top-text-mid">
+                                <span>FAIR Rating:&nbsp;</span>
+                                <div style="display: flex; flex-direction: row; align-items: center;font-size: 14px; margin-left: 12px; "class="container-content-top-text-mid-text"><p class="container-content-table-dot" ></p><span>330</span></div>
+                                <img src="../../../images/info-loan.svg" class="rating" style="width: 15px; margin-left: 7px; vertical-align: middle;" >
+                                <div class="container-content-table-rating-hover">
+                                  <div class="container-content-table-rating-hover-item">
+                                    <div class="container-content-table-rating-hover-title"><p class="container-content-table-dot" ></p><p>Very Poor</p> </div>
+                                    <div class="letter-score border-left">
+                                        <span >F</span>
+                                    </div>
+                                    <div class="number-score border-left">
+                                        <span >39 and below</span>
+                                    </div>
+                                  </div >
+                                  <div class="container-content-table-rating-hover-item">
+                                    <div class="container-content-table-rating-hover-title"><p class="container-content-table-dot" style="background-color: #F98228;"></p><p >Fair</p>  </div>
+                                    <div class="letter-score border-left">
+                                        <span class="score-item">D+</span>
+                                        <span class="score-item">D</span>
+                                        <span >E</span>
+                                    </div>
+                                    <div class="number-score border-left">
+                                        <span class="score-item">50-54</span>
+                                        <span class="score-item">45-49</span>
+                                        <span >40-44</span>
+                                    </div>
+                                  </div>
+                                  <div class="container-content-table-rating-hover-item">
+                                    <div class="container-content-table-rating-hover-title"><p class="container-content-table-dot" style="background-color: #FEA724;"></p><p >Good</p></div>
+                                    <div class="letter-score border-left">
+                                        <span class="score-item">C+</span>
+                                        <span class="score-item">C</span>
+                                        <span >C-</span>
+                                    </div>
+                                    <div class="number-score border-left">
+                                        <span class="score-item">65-69</span>
+                                        <span class="score-item">60-64</span>
+                                        <span >55-59</span>
+                                    </div>
+                                  </div>
+                                  <div class="container-content-table-rating-hover-item">
+                                    <div class="container-content-table-rating-hover-title"><p class="container-content-table-dot" style="background-color: #C1D129;"></p><p >Very Good</p></div>
+                                    <div class="letter-score border-left">
+                                        <span class="score-item">B</span>
+                                        <span>B-</span>
+                                    </div>
+                                    <div class="number-score border-left">
+                                        <span class="score-item">75-79</span>
+                                        <span >70-74</span>
+                                    </div>
+                                  </div>
+                                  <div class="container-content-table-rating-hover-item">
+                                    <div class="container-content-table-rating-hover-title"><p class="container-content-table-dot" style="background-color: #66BB6A;"></p><p >Exceptional</p></div>
+                                    <div class="letter-score border-left">
+                                        <span class="score-item">A-</span>
+                                        <span >B+</span>
+                                    </div>
+                                    <div class="number-score border-left">
+                                        <span class="score-item">85-89</span>
+                                        <span >80-84</span>
+                                    </div>
+                                  </div>
+                                  <div class="container-content-table-rating-hover-item">
+                                    <div class="container-content-table-rating-hover-title"><p class="container-content-table-dot" style="background-color: #66BB6A;"></p><p >Exceptional</p></div>
+                                    <div class="letter-score border-left">
+                                        <span class="score-item">A+</span>
+                                        <span >A</span>
+                                    </div>
+                                    <div class="number-score border-left">
+                                        <span class="score-item">95-100</span>
+                                        <span >90-94</span>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            </div>
+                        <div>
+                            <div class="container-content-top-text-mid"><span>Status:&nbsp;</span>
+                              <div style="display: flex; flex-direction: row; align-items: center;font-size: 14px; margin-left: 5px; "class="container-content-top-text-mid-text"><span style="color:#00C689;">Approved</span></div>
+                              <img src="../../../images/ionic-ios-arrow-down.svg" onclick="statusOpen()" style="width: 8px; margin-left: 7px; vertical-align: middle; transform: rotate(270deg);" >
+                              <div class="container-content-table-status-passive" id="status">
+                                <div class="container-content-table-info-status-item" id="status-item">
+                                  <p style="width: 80%; color: #00C689;">Approved</p> 
+                                </div >
+                                <div class="container-content-table-info-status-item" id="status-item">
+                                  <p style="width: 80%; color: #D8042A;">Rejected</p>  
+                                </div>
+                                <div class="container-content-table-info-status-item" id="status-item">
+                                  <p style="width: 80%; color: #FFBA06;">Under Review</p>  
+                                </div>
+                                <div class="container-content-table-info-status-item" id="status-item">
+                                  <p style="width: 80%; color: #FF8800;">Documentation Review</p>  
+                                </div>
+                                <div class="container-content-table-info-status-item" id="status-item">
+                                  <p style="width: 80%; color: #FF692A;">Documentation Requested</p>  
+                                </div>
+                                <div class="container-content-table-info-status-item" id="status-item">
+                                  <p style="width: 80%; color: #02D93D;">Loan Approved</p>  
+                                </div>
+                                <div class="container-content-table-info-status-item" id="status-item">
+                                  <p style="width: 80%; color: #057D19;">Loan Disbursed</p>  
+                                </div>
+                                <div class="container-content-table-info-status-item" id="status-item">
+                                  <p style="width: 80%; color: #EC3F14;">Loan Rejected</p>  
+                                </div>                            
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-content-top-text-bottom">
+                        <a class="container-content-top-text-bottom-navigation-left passive" href="../loan-application/loan-application.html">
+                            Loan Application
+                        </a>
+                        <div style="height: 100%;">
+                          <a class="container-content-top-text-bottom-navigation-middle active" id="messageBoard" onclick="messageBoard()" style="height: 100%;">
+                              Message Boards
+                          </a>
+                          <div class="message-board-sub-nav-active message-board-sub-nav" id="subNavMessage">
+                              <a class="message-board-sub-nav-first" >STUDENT</a>
+                              <a class="message-board-sub-nav-last" href="../student-message-board-1/student-message-board.html">PARTNER</a>
+                          </div>
+                        </div>
+                        <a class="container-content-top-text-bottom-navigation-right passive" href="../checklist/checklist.html">
+                            Checklist
+                        </a>
+                    </div>
+                  </div>  
+                </div> 
+                <div class="message-board-table">
+                  <div class="message-board-table-left">
+                      <img src="../../../images/Icon map-expand.svg" onclick="location.href='../student-message-board-1/student-message-board.html'" class="expand-button">
+                      <div class="message-board-table-head">Mar 10</div>
+                      <div class="message-board-table-head-message-container">
+                          <div class="message-board-table-head-message-info">
+                                  <img src="../../../images/profile-pic (4).svg" class="message-avatar">
+                                  <div class="message-name-info"> <p class="message-name">John&nbsp;</p><p class="message-sent">sent you a message</p> </div>
+                                  <p class="message-date">March 9, 11:24 Pm</p>
+                          </div>    
+                          <div class="message-board-table-head-message-text">
+                              <div class="message-board-table-head-message-text-div">
+                              Hello, Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stetdolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stetdolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum.
+                              </div>
+                          </div>
+                          <div class="attachments-container">
+                            <div class="attachments-bordor">
+                            </div>  
+                          </div>
+                      </div>
+                      <div class="message-board-table-head-message-container">
+                          <div class="message-board-table-head-message-info">
+                                  <img src="../../../images/profile-pic (4).svg" class="message-avatar">
+                                  <div class="message-name-info"> <p class="message-name">John&nbsp;</p><p class="message-sent">sent you a message</p> </div>
+                                  <p class="message-date">March 9, 11:24 Pm</p>
+                          </div>    
+                          <div class="message-board-table-head-message-text">
+                              <div class="message-board-table-head-message-text-div">
+                              Hello, Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stetdolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stetdolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum.
+                              </div>
+                          </div>
+                          <div class="attachments-container">
+                            <div class="attachments-bordor">
+                              <span class="attachments-container-title">ATTACHMENTS</span>
+                              <img src="../../../images/absolutvision-WYd_PkCa1BY-unsplash.png">
+                              <div class="attachments-container-file-info">
+                                <span class="attachments-container-filename">File 1.PDF</span>
+                                <span  class="attachments-container-size">(9MB)</span>
+                                <img src="../../../images/Icon metro-file-download.svg">
+                              </div>
+                            </div>  
+                        </div>
+                      </div>
+                      <div class="message-board-table-head-message-container">
+                        <div class="message-board-table-head-new-message-info">
+                                <img src="../../../images/profile-pic (4).svg" class="message-avatar">
+                                <div class="new-message-name-info"> 
+                                  <p class="message-name" style="margin-right: 3%;">Use A Quick Response&nbsp;</p>
+                                  <p class="message-sent">
+                                    <img src="../../../images/ionic-ios-arrow-down.svg" style="transform: rotate(270deg);">
+                                  </p> 
+                                </div>
+                        </div> 
+                        <div style="display: flex; flex-direction: column; justify-items: flex-end; align-items: flex-end; width:93%">   
+                          <textarea class="loan-disbursement-table-head-comment-textarea" placeholder="Type your message here..."></textarea>                       
+                          <button class="loan-disbursement-table-head-comment-button" style="border-radius: 25px;">Submit</button>
+                        </div>  
+                      </div>
+                  </div>
+                  <div class="message-board-table-right">
+                      <div class="message-board-table-file-container">
+                          <div class="file-items">
+                              <img class="file-image" src="../../../images/file.svg">
+                              <p class="file-text">File 01</p>
+                              <button class="message-board-table-head-comment-button" style="border-radius: 25px;">Download</button>
+                          </div>
+                          <div class="file-items">
+                              <img class="file-image" src="../../../images/file.svg">
+                              <p class="file-text">File 01</p>
+                              <button class="message-board-table-head-comment-button" style="border-radius: 25px;">Download</button>
+                          </div>
+                          <div class="file-items">
+                              <img class="file-image" src="../../../images/file.svg">
+                              <p class="file-text">File 01</p>
+                              <button class="message-board-table-head-comment-button" style="border-radius: 25px;">Download</button>
+                          </div>
+                          <div class="file-items">
+                              <img class="file-image" src="../../../images/file.svg">
+                              <p class="file-text">File 01</p>
+                              <button class="message-board-table-head-comment-button" style="border-radius: 25px;">Download</button>
+                          </div>
+                      </div>
+                      <button class="download-all-button">
+                          Download All Files
+                      </button>
+                  </div> 
+              </div> 
+                
+              </div>
+            </div> 
+          </div>
+        </div>
+    <script>
+        function surveyClassAdd() {
+           var element = document.getElementById("surveyButton");
+           var rect = document.getElementById("survey-rectangle");
+           var arrow = document.getElementById("survey-arrow");
+           var surveySub = document.getElementById("subNavSurvey");
+           var surveySubItem1 = document.getElementById("subNavItem1");
+           var surveySubItem2 = document.getElementById("subNavItem2");
+           if(element.classList.contains("button-active-survey")){
+            element.classList.remove("button-active-survey");
+            rect.style.display="none"
+            arrow.classList.remove("active-survey-icon")
+            surveySub.classList.remove("survey-sub-nav-active")
+
+           }else{
+            arrow.classList.add("active-survey-icon")
+            element.classList.add("button-active-survey");
+            rect.style.display="block"
+            surveySub.classList.add("survey-sub-nav-active")
+           }
+      }
+        function statusOpen(){
+          var element = document.getElementById("status");
+          if(element.classList.contains("container-content-table-status-passive")){
+            element.classList.remove("container-content-table-status-passive");
+            element.classList.add("container-content-table-status");
+           }else{
+            element.classList.remove("container-content-table-status");
+            element.classList.add("container-content-table-status-passive");           
+          }
+
+          
+        }
+        
+      </script>
+  </body>
+</html>

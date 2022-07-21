@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="account-recovery.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="signin-container">
+      <div class="signin-input-container">
+        <lottie-player
+          src="108277.json"
+          background="transparent"
+          speed="1"
+          style="width: 400px; height: 400px"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="signin-image-container-text">
+          Contact | Privacy | Terms Of Use | Cookie Policy
+        </div>
+      </div>
+      <div class="signin-image-container">
+        <div class="signin-image-container-form">
+          <div>
+            <p class="signin-input-container-title">Account Recovery</p>
+          </div>
+          <div class="signin-inputs">
+            <div class="signin-input">
+              <span class="input-label">Email address</span>
+              <input class="signin-input-input" />
+            </div>
+          </div>
+          <button
+            class="signin-button"
+            id="signin-button"
+            onclick="onclickSend()"
+          >
+            Send Verification Code
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function onclickSend() {
+      document.getElementById("signin-button").classList.add("sended-button");
+      document.getElementById("signin-button").textContent =
+        "Verification Code Sent";
+      setTimeout(() => {
+        location.href = "./change-password/change-password.html";
+      }, 1000);
+    }
+  </script>
+</html>

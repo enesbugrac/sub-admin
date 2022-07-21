@@ -1,0 +1,144 @@
+body {
+  margin: 0 !important;
+  font-family: "Poppins";
+  padding: 0 !important;
+}
+.signin-container {
+  /* Layout Properties */
+  margin-top: 0px;
+  height: 100vh;
+  display: flex;
+  /* UI Properties */
+  background: #ededed;
+  opacity: 1;
+}
+.signin-input-container {
+  padding-right: 197px;
+  padding-left: 197px;
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.signin-inputs {
+  width: 75%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.signin-input {
+  font-weight: 100;
+  color: #ffffff;
+  display: flex;
+  font-size: 14px;
+  font-family: "Poppins";
+  width: 100%;
+  flex-direction: column;
+}
+.input-label {
+  color: #f2f3fe;
+  font: normal normal 300 14px "Poppins";
+}
+.rc-anchor-light {
+  background-color: transparent;
+}
+.signin-forgetpassword {
+  color: #ffffff;
+  font: normal normal 600 12px "Poppins";
+  cursor: pointer;
+}
+.signin-button {
+  background-color: #037ae0;
+  font-family: "Poppins";
+  color: #ffffff;
+  width: 60%;
+  height: 45px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-color: #037ae0;
+  border-radius: 15px;
+  border-style: solid;
+  transition: 0.3s;
+}
+.sended-button {
+  background-image: linear-gradient(83deg, #53d8ff, #4586fb);
+  font-family: "Poppins";
+  color: #ffffff;
+  height: 45px;
+  margin-top: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.sended-container {
+  width: 60%;
+  display: none;
+}
+.signin-button:hover {
+  background-color: #09285a;
+  border-color: #09285a;
+  font-family: "Poppins";
+  transition: 0.3s;
+}
+.signin-input-input {
+  border: 2px solid #f2f3fe;
+  background-color: transparent;
+  border-radius: 10px;
+  opacity: 1;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+}
+.signin-input-container-title {
+  height: 39px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal 600 18px "Poppins";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.signin-image-container {
+  background-image: linear-gradient(318deg, #f0ceb3, #8facdb, #4e7cb4);
+  opacity: 1;
+  margin-top: 0px;
+  width: 826px;
+  padding-left: 10%;
+  border-radius: 50px 0px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signin-image-container-form {
+  width: 65%;
+  height: 65%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px #00000029;
+  border-radius: 15px;
+  opacity: 1;
+  backdrop-filter: blur(50px) opacity(39%);
+
+  background-color: rgba(127, 145, 178, 1);
+}
+.recaptcha-checkbox-border {
+  background-color: transparent;
+  border: 1px solid white !important;
+}
+
+.signin-image-container-text {
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #35baf2;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}

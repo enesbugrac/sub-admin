@@ -44,7 +44,11 @@
       <div class="survey-top-navbar">
         <div class="survey-top-navbar-container">
           <div class="navbar-buttons-container">
-            <a class="navbar-buttons-container-item">BUILD</a>
+            <a
+              class="navbar-buttons-container-item"
+              href="../survey-build/survey-build.html"
+              >BUILD</a
+            >
             <a class="navbar-buttons-container-item active-item">SETTINGS</a>
             <a
               class="navbar-buttons-container-item"
@@ -55,7 +59,7 @@
           <div class="toggle-container">
             <span>Preview Survey</span>
             <label class="switch">
-              <input type="checkbox" />
+              <input type="checkbox" onchange="previweSurvey()" />
               <span class="slider round"></span>
             </label>
           </div>
@@ -141,5 +145,12 @@
         </div>
       </div>
     </div>
+    <script>
+      function previweSurvey() {
+        setTimeout(() => {
+          location.href = "../survey-preview/survey-preview.html";
+        }, 500);
+      }
+    </script>
   </body>
 </html>

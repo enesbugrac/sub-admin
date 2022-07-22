@@ -3,6 +3,64 @@ body {
   font-family: "Poppins";
   padding: 0 !important;
 }
+.cancel-button {
+  border-radius: 24px;
+  opacity: 1;
+  background-color: #d90429;
+  border-color: transparent;
+  font-size: 13px;
+  font-family: "Poppins";
+  font-weight: 500;
+  cursor: pointer;
+  height: 30px;
+  width: 70px;
+  color: #ffffff;
+}
+.cancel-button:hover {
+  background-color: #a20520;
+}
+.add-new-button {
+  border-radius: 24px;
+  opacity: 1;
+  background-color: #037ae0;
+  border-color: transparent;
+  font-size: 13px;
+  font-family: "Poppins";
+  font-weight: 500;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.add-new-button:hover {
+  background-color: #09285a;
+}
+.save-button {
+  border-radius: 24px;
+  opacity: 1;
+  background-color: #08a776;
+  border-color: transparent;
+  font-size: 13px;
+  font-family: "Poppins";
+  font-weight: 500;
+  cursor: pointer;
+  height: 30px;
+  width: 70px;
+  color: #ffffff;
+}
+.save-button:hover {
+  background-color: #00c689;
+}
+.save-cancel-buttons {
+  right: 20%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
 .survey-sub-nav {
   width: 100%;
   cursor: pointer;
@@ -173,62 +231,6 @@ body {
   flex-direction: row;
   justify-content: flex-end;
 }
-.custom-modal {
-  position: absolute;
-  z-index: 999;
-  height: 25%;
-  width: 25%;
-  top: 35%;
-  left: 40%;
-  box-shadow: 0px 0px 20px #00000029;
-  border-radius: 20px;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-repeat: no-repeat;
-  justify-content: space-evenly;
-  backdrop-filter: blur(5px);
-}
-.custom-modal-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 20%;
-  background-color: #037ae0;
-  color: white;
-  font: normal normal 600 16px "Poppins";
-  border-radius: 50px;
-  box-shadow: 0px 3px 40px #00000029;
-}
-.custom-modal-button-container {
-  width: 75%;
-  height: 20%;
-  display: flex;
-  justify-content: space-around;
-}
-.custom-modal-yes-button {
-  box-shadow: 0px 3px 40px #00000029;
-  border-radius: 50px;
-  background-color: #d90429;
-  color: white;
-  border-color: transparent;
-  width: 40%;
-  cursor: pointer;
-  font: normal normal 600 16px "Poppins";
-}
-.custom-modal-no-button {
-  box-shadow: 0px 3px 40px #00000029;
-  border-radius: 50px;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  border-color: transparent;
-  width: 45%;
-  font: normal normal 600 16px "Poppins";
-}
 .container-content-top {
   display: flex;
   flex-direction: row;
@@ -280,8 +282,7 @@ body {
   border-radius: 24px;
   opacity: 1;
   background-color: #037ae0;
-  right: 8%;
-  margin-top: 1%;
+  right: 25%;
   position: absolute;
   border-color: transparent;
   font-size: 13px;
@@ -472,10 +473,94 @@ tr {
 .loan-disbursement-table {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 30px;
   width: 100%;
+  height: 600px;
   margin-bottom: 50px;
-  box-shadow: 5px 5px 20px #0000000f;
+  box-shadow: 0px 0px 6px #00000029;
   border-radius: 10px;
+}
+.input-items-container {
+  height: 35px;
+  box-shadow: 0px 0px 10px #0000000f;
+  border-radius: 15px;
+
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.checklist-item {
+  margin-left: 5%;
+  margin-bottom: 1%;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input[class="input-items-input"]:after {
+  line-height: 1.5em;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-top: -4px;
+  border: 1px solid #09285a;
+  border-radius: 0.25em;
+  background: #ffffff;
+}
+
+input[class="input-items-input"]:checked:after {
+  width: 15px;
+  height: 15px;
+  background: #09285a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  content: "\2713";
+  text-align: center;
+  border: 3px solid #09285a;
+}
+input[class="input-items-input-red"]:after {
+  line-height: 1.5em;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-top: -4px;
+  border: 1px solid #d90429;
+  border-radius: 0.25em;
+  background: #ffffff;
+}
+
+input[class="input-items-input-red"]:checked:after {
+  width: 15px;
+  height: 15px;
+  background: #d90429;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  content: "\2713";
+  text-align: center;
+  border: 1px solid #d90429;
+}
+.add-new-button-div {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input-items-text {
+  margin-left: 5%;
+  font: normal normal normal 15px "Poppins";
+  letter-spacing: 0px;
+  color: #09285a;
 }
 .pl {
   padding-left: 30px;
@@ -483,21 +568,7 @@ tr {
 .pr {
   padding-right: 30px;
 }
-.loan-disbursement-table-item-container {
-  height: 400px;
-  display: block;
-  overflow-y: scroll;
-}
-.loan-disbursement-table-item-container::-webkit-scrollbar-thumb {
-  background: #e8e8e8;
-}
-.loan-disbursement-table-item-container::-webkit-scrollbar-button {
-  display: none;
-}
-.loan-disbursement-table-item-container::-webkit-scrollbar {
-  width: 8px;
-  border-radius: 10px;
-}
+
 .container-content-info-container {
   display: flex;
   width: 100%;

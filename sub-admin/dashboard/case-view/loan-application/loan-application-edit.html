@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
-    <link rel="stylesheet" href="loan-application.css" />
+    <link rel="stylesheet" href="loan-application-edit.css" />
   </head>
   <body>
     <div class="dashboard-container">
@@ -261,9 +261,12 @@
                 </div>
             </div>    
             <div class="loan-disbursement-table">
-                <div class="loan-disbursement-table-head">Check Eligibility</div>
                 <div class="loan-disbursement-table-item-container">
-                <button class="edit-button" onclick="location.href='./loan-application-edit.html'">Edit</button>
+                <div class="save-cancel-buttons">
+                  <button class="cancel-button" onclick="location.href='./loan-application.html'">Cancel</button>
+                  <button class="save-button" onclick="location.href='./loan-application.html'">Save</button>
+                </div>
+               
                 <div class="pl pr">
                   <div class="loan-disbursement-table-head-item border-bottom">
                     <span>1.&nbsp;&nbsp;&nbsp; </span>
@@ -271,7 +274,7 @@
                         <div class="loan-disbursement-table-head-item-questions-main">
                             <span class="loan-disbursement-table-head-item-questions-main-title">How did you hear about Vouchpad?</span>
                             <div class="answer-container">
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">Other</span>
+                              <input class="loan-disbursement-table-head-item-questions-main-answer">
                             </div>
                         </div>
                     </div>
@@ -284,7 +287,7 @@
                           <div class="loan-disbursement-table-head-item-questions-main">
                               <span class="loan-disbursement-table-head-item-questions-main-title">Which option best described your study plans?</span>
                               <div class="answer-container">
-                                <span class="loan-disbursement-table-head-item-questions-main-answer">Other</span>
+                                <input class="loan-disbursement-table-head-item-questions-main-answer">
                               </div>
                           </div>
                       </div>
@@ -297,7 +300,7 @@
                           <div class="loan-disbursement-table-head-item-questions-main">
                               <span class="loan-disbursement-table-head-item-questions-main-title">Enrollment</span>
                               <div class="answer-container">
-                                <span class="loan-disbursement-table-head-item-questions-main-answer">I am or will be enrolled as a full-time student during the entire academic calendar year</span>
+                                <input class="loan-disbursement-table-head-item-questions-main-answer">
                               </div>
                           </div>
                       </div>
@@ -310,7 +313,7 @@
                           <div class="loan-disbursement-table-head-item-questions-main">
                               <span class="loan-disbursement-table-head-item-questions-main-title">Academic Program</span>
                               <div class="answer-container">
-                                <span class="loan-disbursement-table-head-item-questions-main-answer">I am a graduate student in a 2-year program who has at least 1 year to graduate</span>
+                                <input class="loan-disbursement-table-head-item-questions-main-answer"> 
                               </div>  
                           </div>
                       </div>
@@ -323,7 +326,7 @@
                           <div class="loan-disbursement-table-head-item-questions-main">
                               <span class="loan-disbursement-table-head-item-questions-main-title">I am or will be pursuing one of the following degree types</span>
                               <div class="answer-container">
-                                <span class="loan-disbursement-table-head-item-questions-main-answer">Bachelor's</span>
+                                <input class="loan-disbursement-table-head-item-questions-main-answer"> 
                               </div>
                           </div>
                       </div>
@@ -339,20 +342,20 @@
                           <div class="loan-disbursement-table-head-item-questions-main">
                             <span class="loan-disbursement-table-head-item-questions-sub-title">I am attending one of the schools we support</span>
                             <div class="answer-container">
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">University of Pennsylvania</span>
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">College of Engineering</span>
+                              <input class="loan-disbursement-table-head-item-questions-main-answer"> 
+                              <input class="loan-disbursement-table-head-item-questions-main-answer"> 
                             </div>
                           </div>
                           <div class="loan-disbursement-table-head-item-questions-main">
                             <span class="loan-disbursement-table-head-item-questions-sub-title">State where school is located:</span>
                             <div class="answer-container">
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">Pennsylvania</span>
+                              <input class="loan-disbursement-table-head-item-questions-main-answer"> 
                             </div>
                           </div>
                           <div class="loan-disbursement-table-head-item-questions-main">
                             <span class="loan-disbursement-table-head-item-questions-sub-title">City where school is located::</span>
                             <div class="answer-container">
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">Pennsylvania</span>
+                              <input class="loan-disbursement-table-head-item-questions-main-answer"> 
                             </div>
                           </div>
                       </div>

@@ -6,17 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
-    <link rel="stylesheet" href="loan-application.css" />
+    <link rel="stylesheet" href="loan-disbursement.css" />
   </head>
   <body>
     <div class="dashboard-container">
-      <div class="custom-modal" id="modal">
-        <div class="custom-modal-title">Are You Sure?</div>
-        <div class="custom-modal-button-container">
-          <button class="custom-modal-yes-button" onclick="document.getElementById('modal').style.display='none';location.href='../loan-application/loan-application-unpartner.html'">Yes</button>
-          <button class="custom-modal-no-button" onclick="document.getElementById('modal').style.display='none'">No</button>
-        </div>
-      </div>
       <div class="sidebar-image-container">
         <div class="sidebar-image-container-1">
           <div class="sidebar-button-container">
@@ -106,7 +99,7 @@
                             <div class="container-content-top-text-mid">Partner Institution:&nbsp;<p class="container-content-top-text-mid-text"> Grand Bank</p></div>
                             <div class="container-content-top-text-mid">Country:&nbsp;<p class="container-content-top-text-mid-text">USA</p></div>
                             <div class="container-content-top-text-mid">State: &nbsp;<p class="container-content-top-text-mid-text">Texas</p></div>
-                            <div class="container-content-top-text-mid">City:&nbsp;<p class="container-content-top-text-mid-text" style="margin-right: 30px;"> Dallas</p> <button class="assign-button" onclick="document.getElementById('modal').style.display='flex';">Un-Assign Partner</button></div>
+                            <div class="container-content-top-text-mid">City:&nbsp;<p class="container-content-top-text-mid-text" style="margin-right: 30px;"> Dallas</p> <button class="assign-button" onclick="location.href='../loan-application/loan-application-unpartner.html'">Un-Assign Partner</button></div>
                             
                         </div>
                         <div>
@@ -242,128 +235,82 @@
                         </div>
                     </div>
                     <div class="container-content-top-text-bottom">
-                        <a class="container-content-top-text-bottom-navigation-left active" href="../message-board/message-board.html">
+                        <a class="container-content-top-text-bottom-navigation-left passive" href="../loan-application/loan-application.html">
                             Loan Application
                         </a>
                         <div style="height: 100%;">
-                          <a class="container-content-top-text-bottom-navigation-middle passive" id="messageBoard" onclick="messageBoard()" style="height: 100%;">
+                          <a class="container-content-top-text-bottom-navigation-middle active" id="messageBoard" onclick="messageBoard()" style="height: 100%;">
                               Message Boards
                           </a>
-                          <div class="message-board-sub-nav" id="subNavMessage">
+                          <div class="message-board-sub-nav-active message-board-sub-nav" id="subNavMessage">
                               <a class="message-board-sub-nav-first" href="../student-message-board/student-message-board.html">STUDENT</a>
-                              <a class="message-board-sub-nav-last" href="../partner-message-board/partner-message-board.html">PARTNER</a>
+                              <a class="message-board-sub-nav-last" >PARTNER</a>
                           </div>
                         </div>
                         <a class="container-content-top-text-bottom-navigation-right passive" href="../checklist/checklist.html">
                             Checklist
                         </a>
                     </div>
-                </div>
-            </div>    
-            <div class="loan-disbursement-table">
-                <div class="loan-disbursement-table-head">Check Eligibility</div>
-                <div class="loan-disbursement-table-item-container">
-                <button class="edit-button" onclick="location.href='./loan-application-edit.html'">Edit</button>
-                <div class="pl pr">
-                  <div class="loan-disbursement-table-head-item border-bottom">
-                    <span>1.&nbsp;&nbsp;&nbsp; </span>
-                    <div class="loan-disbursement-table-head-item-questions">
-                        <div class="loan-disbursement-table-head-item-questions-main">
-                            <span class="loan-disbursement-table-head-item-questions-main-title">How did you hear about Vouchpad?</span>
-                            <div class="answer-container">
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">Other</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="pl pr">
-                    <div class="loan-disbursement-table-head-item border-bottom">
-                      <span>2.&nbsp;&nbsp;&nbsp; </span>
-                      <div class="loan-disbursement-table-head-item-questions">
-                          <div class="loan-disbursement-table-head-item-questions-main">
-                              <span class="loan-disbursement-table-head-item-questions-main-title">Which option best described your study plans?</span>
-                              <div class="answer-container">
-                                <span class="loan-disbursement-table-head-item-questions-main-answer">Other</span>
-                              </div>
-                          </div>
+                  </div>  
+                </div> 
+                <div class="message-board-table">
+                  <div class="loan-disbursement-table-head">
+                    <div class="message-board-first" onclick="location.href='./partner-message-board.html'">MESSAGES</div>
+                    <div  class="message-board-last">LOAN DISBURSEMENT</div>
+                  </div> 
+                  <div class="border-bottom">
+                    <div class="loan-disbursement-table-head-item">
+                      <p>Requested Amount:</p>
+                      <div class="input-container">
+                        <p style="font-weight: 600;">$16,666.67</p>
                       </div>
                     </div>
                   </div>
-                  <div class="pl pr">
-                    <div class="loan-disbursement-table-head-item border-bottom">
-                      <span>3.&nbsp;&nbsp;&nbsp; </span>
-                      <div class="loan-disbursement-table-head-item-questions">
-                          <div class="loan-disbursement-table-head-item-questions-main">
-                              <span class="loan-disbursement-table-head-item-questions-main-title">Enrollment</span>
-                              <div class="answer-container">
-                                <span class="loan-disbursement-table-head-item-questions-main-answer">I am or will be enrolled as a full-time student during the entire academic calendar year</span>
-                              </div>
-                          </div>
+                  <div class="border-bottom">
+                    <div class="loan-disbursement-table-head-item">
+                      <p>Amount Disbursed:</p>
+                      <div class="input-container">
+                        <p style="font-weight: 600;">$16,666.67</p>
                       </div>
                     </div>
                   </div>
-                  <div class="pl pr">
-                    <div class="loan-disbursement-table-head-item border-bottom">
-                      <span>4.&nbsp;&nbsp;&nbsp; </span>
-                      <div class="loan-disbursement-table-head-item-questions">
-                          <div class="loan-disbursement-table-head-item-questions-main">
-                              <span class="loan-disbursement-table-head-item-questions-main-title">Academic Program</span>
-                              <div class="answer-container">
-                                <span class="loan-disbursement-table-head-item-questions-main-answer">I am a graduate student in a 2-year program who has at least 1 year to graduate</span>
-                              </div>  
-                          </div>
+                  <div class="border-bottom">
+                    <div class="loan-disbursement-table-head-item">
+                      <p>Vouchpad Inc Commission:</p>
+                      <div class="input-container">
+                        <p style="font-weight: 600;">$1200.00</p>
                       </div>
                     </div>
                   </div>
-                  <div class="pl pr">
-                    <div class="loan-disbursement-table-head-item border-bottom">
-                      <span>5.&nbsp;&nbsp;&nbsp; </span>
-                      <div class="loan-disbursement-table-head-item-questions">
-                          <div class="loan-disbursement-table-head-item-questions-main">
-                              <span class="loan-disbursement-table-head-item-questions-main-title">I am or will be pursuing one of the following degree types</span>
-                              <div class="answer-container">
-                                <span class="loan-disbursement-table-head-item-questions-main-answer">Bachelor's</span>
-                              </div>
-                          </div>
+                  <div class="border-bottom">
+                    <div class="loan-disbursement-table-head-item">
+                      <p>Amount Disbursed %:</p>
+                      <div class="input-container">
+                        <p style="font-weight: 600;">%3.5</p>
                       </div>
                     </div>
                   </div>
-                <div class="pl pr">
-                    <div class="loan-disbursement-table-head-item border-bottom">
-                      <span>6.&nbsp;&nbsp;&nbsp; </span>
-                      <div class="loan-disbursement-table-head-item-questions">
-                          <div class="loan-disbursement-table-head-item-questions-main">
-                              <span class="loan-disbursement-table-head-item-questions-main-title">School</span>
-                          </div>
-                          <div class="loan-disbursement-table-head-item-questions-main">
-                            <span class="loan-disbursement-table-head-item-questions-sub-title">I am attending one of the schools we support</span>
-                            <div class="answer-container">
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">University of Pennsylvania</span>
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">College of Engineering</span>
-                            </div>
-                          </div>
-                          <div class="loan-disbursement-table-head-item-questions-main">
-                            <span class="loan-disbursement-table-head-item-questions-sub-title">State where school is located:</span>
-                            <div class="answer-container">
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">Pennsylvania</span>
-                            </div>
-                          </div>
-                          <div class="loan-disbursement-table-head-item-questions-main">
-                            <span class="loan-disbursement-table-head-item-questions-sub-title">City where school is located::</span>
-                            <div class="answer-container">
-                              <span class="loan-disbursement-table-head-item-questions-main-answer">Pennsylvania</span>
-                            </div>
-                          </div>
-                      </div>
+                  <div class="loan-disbursement-table-head-item-last">
+                    <p>Loan Invoice:</p>
+                    <div class="button-container">
+                      <p style="font: normal normal normal 12px/46px Poppins; color: #0089FF;">Invoice.pdf</p>
                     </div>
                   </div>
-                </div>
+                  <div class="loan-disbursement-table-head-comment">
+                    <p class="loan-disbursement-table-head-comment-title">Comment:</p>
+                    <textarea class="loan-disbursement-table-head-comment-textarea" placeholder="Type here..."></textarea>
+                    <div style="display: flex; justify-content: flex-end;width:93%">
+                      <button class="loan-disbursement-table-head-comment-button" style="border-radius: 25px;">Submit</button>
+                    </div>
+                  </div>
+              </div> 
+                
+              </div>
             </div> 
-      </div>
-    </div>
+          </div>
+        </div>
     <script>
-       function surveyClassAdd() {
+        function surveyClassAdd() {
            var element = document.getElementById("surveyButton");
            var rect = document.getElementById("survey-rectangle");
            var arrow = document.getElementById("survey-arrow");
@@ -375,7 +322,6 @@
             rect.style.display="none"
             arrow.classList.remove("active-survey-icon")
             surveySub.classList.remove("survey-sub-nav-active")
-            
 
            }else{
             arrow.classList.add("active-survey-icon")
@@ -396,19 +342,7 @@
 
           
         }
-        function messageBoard() { 
-          var element = document.getElementById("messageBoard");
-          var rect = document.getElementById("subNavMessage");
-          if(element.classList.contains("passive")){
-            element.classList.remove("passive");
-            element.classList.add("active");
-            rect.classList.add("message-board-sub-nav-active")
-           }else{
-            element.classList.remove("active");
-            element.classList.add("passive");
-            rect.classList.remove("message-board-sub-nav-active")
-           }
-        }
+        
       </script>
   </body>
 </html>

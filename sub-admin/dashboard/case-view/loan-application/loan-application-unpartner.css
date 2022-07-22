@@ -225,7 +225,8 @@ body {
   opacity: 1;
   background-color: #037ae0;
   right: 8%;
-  top: 68%;
+  margin-top: 1%;
+
   position: absolute;
   border-color: transparent;
   font-size: 13px;
@@ -235,6 +236,9 @@ body {
   height: 25px;
   width: 70px;
   color: #ffffff;
+}
+.edit-button:hover {
+  background-color: #09285a;
 }
 .container-content-table-td {
   display: flex;

@@ -197,6 +197,7 @@ body {
   width: 70px;
   color: #ffffff;
 }
+
 .container-content-table-td {
   display: flex;
   flex-direction: row;
@@ -966,7 +967,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  width: 75%;
+  width: 60%;
+  margin-left: 2%;
 }
 .new-message-name-info {
   display: flex;
@@ -983,7 +985,7 @@ a {
 .message-board-table-head-message-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 80%;
 }
 .message-board-table-head-new-message-info {
@@ -996,6 +998,8 @@ a {
   font: italic normal 200 10px "Poppins";
   letter-spacing: 0px;
   color: #09285a;
+  display: flex;
+  align-items: center;
 }
 .message-sent {
   font: normal normal normal 14px "Poppins";

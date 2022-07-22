@@ -281,19 +281,17 @@ input:checked + .slider:before {
 
   background-color: #e5eaf4;
 
-  font: normal normal 500 12px "Poppins";
+  font: normal normal 500 10px "Poppins";
 }
 .label-div {
   width: 100%;
-
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e5eaf4;
-  font: normal normal 500 12px "Poppins";
+  font: normal normal 500 10px "Poppins";
 }
-
 .input-div {
   width: 100%;
 

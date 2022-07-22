@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="survey-preview.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".js-example-basic-multiple").select2();
+      });
+      $(document).ready(function () {
+        $(".js-example-basic-single").select2();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="survey-container">
+      <div class="survey-top-bar">
+        <div class="survey-top-bar-container">
+          <div class="toggle-container">
+            <span class="toggle-text">Preview Survey</span>
+            <label class="switch">
+              <input type="checkbox" checked onchange="previweSurveyCancel()"/>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="head-container-img" >
+          <img
+            src="../../images/logo.png"
+            class="head-container-img-image"
+          />
+          <span class="head-container-text">Vouchpad</span>
+        </div>
+        
+        <div class="container-in">
+          <div class="container-item-head">     
+            <div class="container-head-container">
+                <span class="container-head-container-title">Heading</span>
+                <span class="container-head-container-sub">Type a subheader</span>
+            </div>
+            
+          </div>
+  
+          <div class="container-item" style="border-top: 2px solid #bababa !important;">
+            <span class="container-item-title"
+              >1. &nbsp;&nbsp;Full Name <span style="color: #d90429">*</span></span
+            >
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <span class="container-item-sub">First Name</span>
+                <input class="container-item-input-sub" />
+              </div>
+              <div class="container-input-wrapper">
+                <span class="container-item-sub">Last Name</span>
+                <input class="container-item-input-sub" />
+              </div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title">2. &nbsp;&nbsp;Email </span>
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <span class="container-item-sub">City</span>
+                <input class="container-item-input-sub" />
+              </div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >3. &nbsp;&nbsp;Address <span style="color: #d90429">*</span>
+            </span>
+            <span class="container-item-sub">Street Address</span>
+            <input class="container-item-input" />
+            <span class="container-item-sub">Street Address Line 2</span>
+            <input class="container-item-input" />
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <span class="container-item-sub">City</span>
+                <input class="container-item-input-sub" />
+              </div>
+              <div class="container-input-wrapper">
+                <span class="container-item-sub">State / Province</span>
+                <input class="container-item-input-sub" />
+              </div>
+            </div>
+            <span class="container-item-sub">Postal / Zip Code</span>
+            <input class="container-item-input" />
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >4. &nbsp;&nbsp;Phone Number <span style="color: #d90429">*</span>
+            </span>
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <input
+                  class="container-item-input-sub"
+                  placeholder="(000) 000-0000"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >5. &nbsp;&nbsp;Date Picker</span>
+            </span>
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <input
+                  class="container-item-input-sub"
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  value="2022-07-22"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >6. &nbsp;&nbsp;Signature</span>
+            </span>
+            <div class="container-input-container">
+              <div class="container-signature-container">
+                <img src="../../images/Signature.svg">
+              </div>
+            </div>
+            
+          </div>
+          <div class="container-item" style="border-top: 1px solid #bababa;">
+            <div class="container-buttons-div">
+               <button class="container-button color-3" onclick="location.href='./survey-preview-next.html'">Next</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <script>
+      function removeQuestion(){
+        document.getElementById('info-container').style.display='flex';
+        setTimeout(() => {
+          document.getElementById('info-container').style.display='none';
+      }, 1300);
+      }
+      function infoCancel(){
+      
+          document.getElementById('info-container').style.display='none';
+      }
+      function previweSurveyCancel(){
+        setTimeout(() => {
+          location.href='../survey-build/survey-build.html'
+      }, 500);
+      }
+    </script>
+  </body>
+</html>

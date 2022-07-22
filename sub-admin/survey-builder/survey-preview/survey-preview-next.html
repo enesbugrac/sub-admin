@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="survey-preview-next.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".js-example-basic-multiple").select2();
+      });
+      $(document).ready(function () {
+        $(".js-example-basic-single").select2();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="survey-container">
+      <div class="survey-top-bar">
+        <div class="survey-top-bar-container">
+          <div class="toggle-container">
+            <span class="toggle-text">Preview Survey</span>
+            <label class="switch">
+              <input type="checkbox" checked onchange="previweSurveyCancel()"/>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="head-container-img" >
+          <img
+            src="../../images/logo.png"
+            class="head-container-img-image"
+          />
+          <span class="head-container-text">Vouchpad</span>
+        </div>
+        
+        <div class="container-in">
+          <div class="container-item">
+            <span class="container-item-title"
+              >7.&nbsp;&nbsp;Short Text </span
+            >
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <input class="container-item-input-sub" />
+              </div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >8.&nbsp;&nbsp;Long Text </span>
+            <textarea class="container-item-text-area" placeholder="Type here..." ></textarea>   
+          </div>
+
+          <div class="container-item">
+            <span class="container-item-title"
+              >9.&nbsp;&nbsp;Dropdown </span
+            >
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <select
+                aria-placeholder="Please select"
+                class="js-example-basic-single container-item-select"
+                name="state"
+              >
+                >
+                <option value="AL">Option 1</option>
+                <option value="WY">Option 2</option>
+                <option value="TX">Option 3</option>
+              </select>
+              </div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >10.&nbsp;&nbsp;Single Choice </span>
+            <div class="font-check">            
+             <div class="check-radio"> <input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML">
+              <label style="margin: 0; margin-left:8px;" for="html">Type option 1 </label></div>
+             <div class="check-radio"> <input type="radio"  style="width:15px; height: 15px;"id="css" name="fav_language" value="CSS">
+              <label style="margin: 0; margin-left:8px;" for="css">Type option 2 </label></div>
+             <div class="check-radio"> <input type="radio" style="width:15px; height: 15px;" id="javascript" name="fav_language" value="JavaScript">
+              <label style="margin: 0; margin-left:8px;" for="javascript">Type option 3 </label> </div>
+             <div class="check-radio"> <input type="radio" style="width:15px; height: 15px;" id="4" name="fav_language" value="4">
+              <label style="margin: 0; margin-left:8px;" for="4">Type option 4 </label></div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >11.&nbsp;&nbsp;Multiple Choice </span>
+            <div class="font-check">            
+             <div class="check-radio"> <input type="checkbox" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML">
+              <label style="margin: 0; margin-left:8px;" for="html">Type option 1 </label></div>
+             <div class="check-radio"> <input type="checkbox"  style="width:15px; height: 15px;"id="css" name="fav_language" value="CSS">
+              <label style="margin: 0; margin-left:8px;" for="css">Type option 2 </label></div>
+             <div class="check-radio"> <input type="checkbox" style="width:15px; height: 15px;" id="javascript" name="fav_language" value="JavaScript">
+              <label style="margin: 0; margin-left:8px;" for="javascript">Type option 3 </label> </div>
+             <div class="check-radio"> <input type="checkbox" style="width:15px; height: 15px;" id="4" name="fav_language" value="4">
+              <label style="margin: 0; margin-left:8px;" for="4">Type option 4 </label></div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >12.&nbsp;&nbsp;Number </span
+            >
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <input class="container-item-input-sub" />
+              </div>
+            </div>
+          </div>
+          <img style="margin-top: 20px; margin-bottom: 20px;" src="../../images/Layer 2.svg">
+          <div class="container-item">
+            <span class="container-item-title"
+              >13.&nbsp;&nbsp;Time </span
+            >
+            <div class="container-sub-item-date">
+                <input class="container-item-hour" placeholder="HH:MM" />
+                <input class="container-item-pm" placeholder="PM" />
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >14.&nbsp;&nbsp;Spinner </span
+            >
+            <div class="container-input-container">
+              <div class="container-input-wrapper">
+                <div class="input-group customSpinner <!--Thank You Jesus!-->">
+                  <div class="input-group-prepend">
+                    <button style="background-color: #BABABA;  height: 50px;" class="btn spinnerbutton spinnerMinus">
+                        <span class = "fa fa-minus"></span>
+                      </button>
+                  </div>
+                  <input style="background-color: white;" type="text" readonly value="0" class="form-control spinnerVal" />
+                  <div class="input-group-append">
+                    <button style="background-color: #BABABA;  height: 50px;" class="btn spinnerbutton spinnerPlus">
+                        <span class = "fa fa-plus" ></span>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >15.&nbsp;&nbsp;Input Table</span
+            >
+            <div class="input-table">
+                <div style="display: flex;flex-direction: column; width: 100%;">
+                  <div class="label-div-left" style="color: white;background-color: white;"><label for="html">Type option 1 </label></div>
+                  <div class="label-div-left"><label for="html">Type option 1 </label></div>
+                  <div class="label-div-left"><label for="html">Type option 1 </label></div>
+                  <div class="label-div-left"><label for="html">Type option 1 </label></div>
+                  <div class="label-div-left"><label for="html">Type option 1 </label></div>
+                </div>
+                <div style="display: flex;flex-direction: column; width: 100%;">
+                  <div class="label-div"><label for="html">Type option 1 </label></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                </div>
+                <div style="display: flex;flex-direction: column; width: 100%;">
+                  <div class="label-div"><label for="html">Type option 1 </label></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                </div>
+                <div style="display: flex;flex-direction: column; width: 100%;">
+                  <div class="label-div"><label for="html">Type option 1 </label></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                </div>
+                <div style="display: flex;flex-direction: column; width: 100%;">
+                  <div class="label-div"><label for="html">Type option 1 </label></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                  <div class="input-div"><input type="radio" style="width:15px; height: 15px;" id="html" name="fav_language" value="HTML"></div>
+                </div>
+            </div>
+          </div>
+          <div class="container-item">
+            <span class="container-item-title"
+              >16.&nbsp;&nbsp;Star Rating </span
+            >
+            <div class="container-star-container">
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>Worst</span>
+                </div>
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>&nbsp;</span>
+                </div>
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>Neutral</span>
+                </div>
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>&nbsp;</span>
+                </div>
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>Best</span>
+                </div>
+            </div>
+          </div>
+          <div class="container-item" style="border-bottom: 1px solid #bababa;">
+            <span class="container-item-title"
+              >17.&nbsp;&nbsp;Scale Rating</span
+            >
+            <div class="container-star-container">
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>Worst</span>
+                </div>
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>&nbsp;</span>
+                </div>
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>Neutral</span>
+                </div>
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>&nbsp;</span>
+                </div>
+                <div class="star-container">
+                  <img src="../../images/Polygon 7.svg">
+                  <span>Best</span>
+                </div>
+            </div>
+          </div>
+          <div class="container-item" >
+            <div class="container-buttons-div">
+               <button class="container-button color-1" onclick="location.href='./survey-preview.html'">Back</button>
+               <button class="container-button color-2" onclick="location.href='../../survey/my-surveys/my-surveys.html'">Submit</button>
+            </div>
+          </div>
+      </div>
+     
+    </div>
+    <script>
+      function removeQuestion(){
+        document.getElementById('info-container').style.display='flex';
+        setTimeout(() => {
+          document.getElementById('info-container').style.display='none';
+      }, 1300);
+      }
+      function infoCancel(){
+      
+          document.getElementById('info-container').style.display='none';
+      }
+      function previweSurveyCancel(){
+        setTimeout(() => {
+          location.href='../survey-build/survey-build.html'
+      }, 500);
+      }
+    </script>
+  </body>
+</html>

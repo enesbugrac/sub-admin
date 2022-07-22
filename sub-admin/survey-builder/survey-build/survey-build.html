@@ -195,6 +195,27 @@
         </div>
       </div>
       </div>
+      <div class="image-elements-container" id="image-element-div">
+        <div class="image-elements-head">
+          <span>Logo Properties</span>
+          <img class="form-elements-head-img" src="../../images/ep_close-bold.svg" onclick="document.getElementById('image-element-div').classList.remove('image-elements-container-active')">
+        </div>
+        <div class="form-elements-item-container">
+          <div class="head-item">
+            <span class="head-item-title"
+              >Logo
+            </span>
+            <div class="image-upload-container">
+              <div class="image-upload-text">Upload</div>
+              <div class="upload-container">
+                <div class="upload-container-buttons">
+                  <button class="upload-button-image">UPLOAD FILE</button>
+                </div>     
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="survey-top-bar">
         <div class="survey-top-bar-container">
           <div class="logo-container">
@@ -220,7 +241,7 @@
           <div class="toggle-container">
             <span class="toggle-text">Preview Survey</span>
             <label class="switch">
-              <input type="checkbox" />
+              <input type="checkbox" onchange="previweSurvey()"/>
               <span class="slider round"></span>
             </label>
           </div>
@@ -246,12 +267,12 @@
             <span>+ ADD YOUR LOGO</span>
           </div>
         </div>
-        <div class="head-container-img">
+        <div class="head-container-img" onclick="document.getElementById('image-element-div').classList.add('image-elements-container-active')">
           <img
             src="../../images/akar-icons_image.svg"
             class="head-container-img-image"
           />
-          <span style="cursor: pointer"> ADD YOUR LOGO</span>
+          <span class="head-container-text"> ADD YOUR LOGO</span>
         </div>
         <div class="page-number">
           <span>PAGE 1</span>
@@ -599,7 +620,11 @@
       
           document.getElementById('info-container').style.display='none';
       }
-      
+      function previweSurvey(){
+        setTimeout(() => {
+          location.href='../survey-preview/survey-preview.html'
+      }, 500);
+      }
     </script>
   </body>
 </html>

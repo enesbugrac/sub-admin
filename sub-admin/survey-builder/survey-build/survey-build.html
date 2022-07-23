@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
+    <script src="script.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
       rel="stylesheet"
@@ -278,7 +278,7 @@
           <span>PAGE 1</span>
         </div>
         <div class="container-in">
-          <div class="container-item-head">     
+          <div class="container-item-head" draggable="true">     
             <div class="container-head-container">
                 <span class="container-head-container-title">Heading</span>
                 <span class="container-head-container-sub">Type a subheader</span>
@@ -296,7 +296,7 @@
             </div>
           </div>
   
-          <div class="container-item" style="border-top: 2px solid #bababa !important;">
+          <div class="container-item" draggable="true" style="border-top: 2px solid #bababa !important;">
             <span class="container-item-title"
               >Full Name <span style="color: #d90429">*</span></span
             >
@@ -311,7 +311,7 @@
               </div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title">Email </span>
             <div class="container-input-container">
               <div class="container-input-wrapper">
@@ -340,7 +340,7 @@
             <span class="container-item-sub">Postal / Zip Code</span>
             <input class="container-item-input" />
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Phone Number <span style="color: #d90429">*</span>
             </span>
@@ -363,7 +363,7 @@
               </div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Date Picker</span>
             </span>
@@ -379,7 +379,7 @@
               </div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Signature</span>
             </span>
@@ -400,7 +400,7 @@
           <span>PAGE 2</span>
         </div>
         <div class="container-in">
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Short Text </span
             >
@@ -410,13 +410,13 @@
               </div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Long Text </span>
             <textarea class="container-item-text-area" placeholder="Type here..." ></textarea>   
           </div>
 
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Dropdown </span
             >
@@ -435,7 +435,7 @@
               </div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Single Choice </span>
             <div class="font-check">            
@@ -449,7 +449,7 @@
               <label style="margin: 0;" for="4">Type option 4 </label></div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Multiple Choice </span>
             <div class="font-check">            
@@ -463,7 +463,7 @@
               <label style="margin: 0;" for="4">Type option 4 </label></div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Number </span
             >
@@ -474,7 +474,7 @@
             </div>
           </div>
           <img style="margin-top: 20px; margin-bottom: 20px;" src="../../images/Layer 2.svg">
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Time </span
             >
@@ -483,7 +483,7 @@
                 <input class="container-item-pm" placeholder="PM" />
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Spinner </span
             >
@@ -505,7 +505,7 @@
               </div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Input Table</span
             >
@@ -547,7 +547,7 @@
                 </div>
             </div>
           </div>
-          <div class="container-item">
+          <div class="container-item" draggable="true">
             <span class="container-item-title"
               >Star Rating </span
             >
@@ -574,7 +574,7 @@
                 </div>
             </div>
           </div>
-          <div class="container-item" style="border-bottom: 1px solid #bababa;">
+          <div class="container-item" draggable="true" style="border-bottom: 1px solid #bababa;">
             <span class="container-item-title"
               >Scale Rating</span
             >
@@ -601,7 +601,7 @@
                 </div>
             </div>
           </div>
-          <div class="container-item" >
+          <div class="container-item" draggable="true">
             <div class="container-buttons-div">
                <button class="container-button color-1">Back</button>
                <button class="container-button color-2">Submit</button>

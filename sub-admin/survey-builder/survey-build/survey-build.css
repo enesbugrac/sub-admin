@@ -341,8 +341,12 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  cursor: move;
 }
-
+.container-item-dragging {
+  background-color: black;
+  opacity: 0.5;
+}
 .container-item-head {
   margin-right: -51px;
   width: 110%;

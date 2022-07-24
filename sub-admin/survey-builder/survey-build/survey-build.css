@@ -344,8 +344,6 @@ input:checked + .slider:before {
   cursor: move;
 }
 .container-item-dragging {
-  background-color: black;
-  opacity: 0.5;
 }
 .container-item-head {
   margin-right: -51px;
@@ -996,6 +994,8 @@ input:checked + .slider:before {
   display: flex;
   text-align: left;
   justify-content: flex-start;
+}
+.form-elements-item-dragging {
 }
 .form-elements-item-text {
   font: normal normal normal 12px "Poppins";

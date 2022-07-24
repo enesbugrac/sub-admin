@@ -69,7 +69,7 @@
               <div class="form-elements-item-img-div"><img src="../../images/bi_file-text-fill.svg" class="form-elements-item-img"></div>
               <div class="form-elements-item-text"><span>Long Text</span></div>
             </div>
-            <div class="form-elements-item" draggable="true">
+            <div class="form-elements-item" id="paragraph_element" draggable="true">
               <div class="form-elements-item-img-div"><img src="../../images/carbon_text-font.svg" class="form-elements-item-img"></div>
               <div class="form-elements-item-text"><span>Paragraph</span></div>
             </div>
@@ -278,7 +278,7 @@
           <span>PAGE 1</span>
         </div>
         <div class="container-in">
-          <div class="container-item-head" draggable="true">     
+          <div class="container-item" style="margin-right: -51px;width: 110%;padding-left: 38px;padding-top: 20px; display: flex; flex-direction: row;padding-bottom: 10px;" id="heading_item" draggable="true">     
             <div class="container-head-container">
                 <span class="container-head-container-title">Heading</span>
                 <span class="container-head-container-sub">Type a subheader</span>
@@ -415,6 +415,10 @@
               >Long Text </span>
             <textarea class="container-item-text-area" placeholder="Type here..." ></textarea>   
           </div>
+          <div class="container-item" id="paragraph_item" draggable="true">
+            <span class="container-item-title"
+              >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </span>
+          </div>
           <div class="container-item" id="dropdown_item" draggable="true">
             <span class="container-item-title"
               >Dropdown </span
@@ -472,7 +476,15 @@
               </div>
             </div>
           </div>
-          <img style="margin-top: 20px; margin-bottom: 20px;" src="../../images/Layer 2.svg">
+          <div class="container-item"  id="image_item" draggable="true">
+            <span class="container-item-title"
+              >Image </span
+            >
+            <div style="display: flex; flex-direction: row; justify-content: center;">
+              <img style="margin-top: 20px; margin-bottom: 20px; width: 30%;" src="../../images/Layer 2.svg">
+              
+            </div>
+          </div>
           <div class="container-item" id="time_item" draggable="true">
             <span class="container-item-title"
               >Time </span

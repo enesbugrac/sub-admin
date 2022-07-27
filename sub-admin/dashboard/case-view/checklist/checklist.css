@@ -117,6 +117,7 @@ body {
   border-radius: 20px 0px 0px 20px;
 }
 .sidebar-button {
+  cursor: pointer;
   width: 100%;
   text-align: left;
   height: 60px;
@@ -220,6 +221,62 @@ body {
   width: 150px;
   color: #ffffff;
 }
+.custom-modal {
+  position: absolute;
+  z-index: 999;
+  height: 25%;
+  width: 25%;
+  top: 35%;
+  left: 40%;
+  box-shadow: 0px 0px 20px #00000029;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  backdrop-filter: blur(5px);
+}
+.custom-modal-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 20%;
+  background-color: #037ae0;
+  color: white;
+  font: normal normal 600 16px "Poppins";
+  border-radius: 50px;
+  box-shadow: 0px 3px 40px #00000029;
+}
+.custom-modal-button-container {
+  width: 75%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+.custom-modal-yes-button {
+  box-shadow: 0px 3px 40px #00000029;
+  border-radius: 50px;
+  background-color: #d90429;
+  color: white;
+  border-color: transparent;
+  width: 40%;
+  cursor: pointer;
+  font: normal normal 600 16px "Poppins";
+}
+.custom-modal-no-button {
+  box-shadow: 0px 3px 40px #00000029;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-color: transparent;
+  width: 45%;
+  font: normal normal 600 16px "Poppins";
+}
 .edit-button {
   border-radius: 24px;
   opacity: 1;
@@ -270,7 +327,6 @@ body {
   border-radius: 20px;
 }
 .container-content-table-status-passive {
-  height: 0px;
   display: none;
   -webkit-transition: height 0.3s ease;
   -moz-transition: height 0.3s ease;
@@ -279,7 +335,6 @@ body {
 }
 
 .container-content-table-status {
-  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -298,11 +353,12 @@ body {
   border-radius: 20px;
 }
 .container-content-table-info-status-item {
-  height: 5px;
   color: #0d1d29;
   font-size: 12px;
   font-weight: 400;
   display: flex;
+  cursor: pointer;
+
   align-items: center;
 }
 .container-content-table-rating-hover {
@@ -850,6 +906,7 @@ th {
   margin-top: 19px;
 }
 .sidebar-button {
+  cursor: pointer;
   width: 100%;
   text-align: left;
   height: 60px;

@@ -78,8 +78,11 @@ body {
   border-radius: 20px 0px 0px 20px;
 }
 .sidebar-button {
+  cursor: pointer;
   width: 100%;
   text-align: left;
+  cursor: pointer;
+
   height: 60px;
   padding-left: 25px;
   border-radius: 20px 0px 0px 20px;
@@ -232,7 +235,6 @@ body {
   border-radius: 20px;
 }
 .container-content-table-status-passive {
-  height: 0px;
   display: none;
   -webkit-transition: height 0.3s ease;
   -moz-transition: height 0.3s ease;
@@ -241,7 +243,6 @@ body {
 }
 
 .container-content-table-status {
-  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -260,11 +261,11 @@ body {
   border-radius: 20px;
 }
 .container-content-table-info-status-item {
-  height: 5px;
   color: #0d1d29;
   font-size: 12px;
   font-weight: 400;
   display: flex;
+  cursor: pointer;
   align-items: center;
 }
 .container-content-table-rating-hover {
@@ -494,6 +495,7 @@ tr {
   border-radius: 10px;
   border-color: #0000003b;
   margin-bottom: 5px;
+  box-shadow: 0px 0px 6px #00000029;
   padding-left: 4%;
   padding-top: 2%;
   resize: none;
@@ -780,10 +782,13 @@ th {
   margin-top: 19px;
 }
 .sidebar-button {
+  cursor: pointer;
   width: 100%;
   text-align: left;
   height: 60px;
   padding-left: 25px;
+  cursor: pointer;
+
   border-radius: 20px 0px 0px 20px;
   border-style: solid;
   border-color: transparent;

@@ -10,6 +10,13 @@
   </head>
   <body>
     <div class="dashboard-container">
+      <div class="custom-modal" id="modal">
+        <div class="custom-modal-title">Are You Sure?</div>
+        <div class="custom-modal-button-container">
+          <button class="custom-modal-yes-button" onclick="document.getElementById('modal').style.display='none';location.href='../loan-application/loan-application-unpartner.html'">Yes</button>
+          <button class="custom-modal-no-button" onclick="document.getElementById('modal').style.display='none'">No</button>
+        </div>
+      </div>
       <div class="sidebar-image-container">
         <div class="sidebar-image-container-1">
           <div class="sidebar-button-container">
@@ -99,7 +106,7 @@
                             <div class="container-content-top-text-mid">Partner Institution:&nbsp;<p class="container-content-top-text-mid-text"> Grand Bank</p></div>
                             <div class="container-content-top-text-mid">Country:&nbsp;<p class="container-content-top-text-mid-text">USA</p></div>
                             <div class="container-content-top-text-mid">State: &nbsp;<p class="container-content-top-text-mid-text">Texas</p></div>
-                            <div class="container-content-top-text-mid">City:&nbsp;<p class="container-content-top-text-mid-text" style="margin-right: 30px;"> Dallas</p> <button class="assign-button" onclick="location.href='../loan-application/loan-application-unpartner.html'">Un-Assign Partner</button></div>
+                            <div class="container-content-top-text-mid">City:&nbsp;<p class="container-content-top-text-mid-text" style="margin-right: 30px;"> Dallas</p> <button class="assign-button" onclick="document.getElementById('modal').style.display='flex';">Un-Assign Partner</button></div>
                             
                         </div>
                         <div>

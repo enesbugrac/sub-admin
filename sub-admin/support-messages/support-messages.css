@@ -501,6 +501,7 @@ th {
   margin-top: 19px;
 }
 .sidebar-button {
+  cursor: pointer;
   width: 100%;
   text-align: left;
   height: 60px;

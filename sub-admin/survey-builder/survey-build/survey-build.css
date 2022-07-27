@@ -373,6 +373,7 @@ input:checked + .slider:before {
   width: 25px;
   height: 25px;
   display: flex;
+  cursor: pointer;
   color: white;
   font: normal normal 200 12px "Poppins";
   justify-content: center;
@@ -692,7 +693,6 @@ input:checked + .slider:before {
   font: normal normal normal 13px "Poppins";
   margin-bottom: 10px;
   height: 50px;
-  cursor: pointer;
   align-items: center;
   justify-content: center;
   color: #037ae0;
@@ -703,7 +703,6 @@ input:checked + .slider:before {
 }
 .head-container-img-image {
   color: #0089ff;
-  cursor: pointer;
   margin-right: 1%;
   background-color: #0089ff;
   width: 5%;

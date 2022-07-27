@@ -117,6 +117,7 @@ body {
   border-radius: 20px 0px 0px 20px;
 }
 .sidebar-button {
+  cursor: pointer;
   width: 100%;
   text-align: left;
   height: 60px;
@@ -350,7 +351,6 @@ body {
   border-radius: 20px;
 }
 .container-content-table-status-passive {
-  height: 0px;
   display: none;
   -webkit-transition: height 0.3s ease;
   -moz-transition: height 0.3s ease;
@@ -359,7 +359,6 @@ body {
 }
 
 .container-content-table-status {
-  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -378,9 +377,9 @@ body {
   border-radius: 20px;
 }
 .container-content-table-info-status-item {
-  height: 5px;
   color: #0d1d29;
   font-size: 12px;
+  cursor: pointer;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -902,6 +901,7 @@ th {
   margin-top: 19px;
 }
 .sidebar-button {
+  cursor: pointer;
   width: 100%;
   text-align: left;
   height: 60px;

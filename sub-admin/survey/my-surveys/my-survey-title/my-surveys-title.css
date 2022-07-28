@@ -169,7 +169,10 @@ body {
   font-weight: 500;
   cursor: pointer;
   height: 35px;
-  width: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 130px;
   color: #ffffff;
 }
 .container-content-table-info-hover-item {

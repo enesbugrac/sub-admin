@@ -712,7 +712,7 @@ a {
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  width: 60%;
+  width: 90%;
 }
 .message-board-table-head-message-info {
   display: flex;

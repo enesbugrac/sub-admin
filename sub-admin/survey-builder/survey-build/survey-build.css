@@ -683,11 +683,27 @@ input:checked + .slider:before {
 .head-container:hover {
   display: none;
 }
+.head-container-text-click {
+  font: normal normal normal 13px "Poppins";
+  display: block;
+}
 .head-container:hover + .head-container-img .head-container-text {
   font: normal normal normal 13px "Poppins";
   display: block;
 }
-
+.head-container-img-click {
+  width: 38%;
+  font: normal normal normal 13px "Poppins";
+  margin-bottom: 10px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #037ae0;
+  display: flex;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px dashed #037ae0;
+  border-radius: 5px;
+}
 .head-container:hover + .head-container-img {
   width: 38%;
   font: normal normal normal 13px "Poppins";
